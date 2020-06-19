@@ -51,13 +51,19 @@ call plug#begin('~/.vim/plugged')
   
   " YCM
   Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clangd-completer --go-completer --js-completer' }
+
+  " airline
+  Plug 'vim-airline/vim-airline'
+
+  "python mode
+  Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 call plug#end()
 
 " fzf
 set rtp+=/usr/local/opt/fzf
 
 inoremap jk <Esc>
-cnoremap jk <Esc>
+cnoremap jk <C-c>
 
 " Movement in insert mode
 inoremap <C-h> <C-o>h
@@ -65,3 +71,4 @@ inoremap <C-l> <C-o>a
 inoremap <C-j> <C-o>j
 inoremap <C-k> <C-o>k
 inoremap <C-^> <C-o><C-^>
+
