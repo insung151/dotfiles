@@ -1,0 +1,11 @@
+inoremap jk <Esc>
+cnoremap jk <C-c>
+
+" Movement in insert mode
+inoremap <C-h> <C-o>h
+inoremap <C-l> <C-o>a
+
+nnoremap <leader>oi :action OptimizeImports<cr>
+nnoremap <leader>rc :action ReformatCode<cr>
+nnoremap <leader>rf :action RenameFile<cr>
+
