@@ -8,7 +8,7 @@ if [ "$(uname -s)" = 'Darwin' ]; then
 
   brew cask install iterm2 google-chrome
 
-  brew install zsh zsh-completions macvim pipenv pyenv go tmux yarn npm
+  brew install zsh zsh-completions macvim pipenv pyenv go tmux yarn npm mysql
 
 fi
 
